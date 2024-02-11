@@ -1,0 +1,105 @@
+/* Reset de margens e fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Estilos para o header */
+header {
+    /* código anterior */
+    animation: pulse-header 2s infinite;
+}
+
+@keyframes pulse-header {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+header img {
+    margin-bottom: 1rem;
+}
+header {
+    background-color: #596f7e;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin-bottom: 0;
+}
+
+/* Estilos para as seções */
+.section {
+    padding: 2rem 0;
+}
+
+.section h2 {
+    margin-bottom: 1rem;
+}
+
+/* Estilos para a tabela de horários e valores */
+.section-schedule table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.section-schedule table th,
+.section-schedule table td {
+    border: 1px solid #ebe5e5;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.section-schedule table th {
+    background-color: #596f7b;
+    font-weight: bold;
+}
+
+/* Estilos para o formulário de registro */
+.section form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.section label {
+    margin-bottom: 0.5rem;
+}
+
+.section input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+.section button {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.section button:hover {
+    background-color: #596f7e;
+}
